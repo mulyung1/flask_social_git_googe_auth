@@ -10,9 +10,16 @@
       <!-- GitHub button starts here -->
       <a href="{{url_for('login')}}"  class="btn btn-secondary">
         <i class="fa fa-github fa-fw"></i>
-        <span>Login with GitHub</span>
+        <span>Continue with GitHub</span>
       </a>
       <!-- GitHub button ends here -->
+
+      <!-- Google button starts here -->
+      <a href="{{url_for('login_google')}}"  class="btn btn-primary">
+        <i class="fa fa-google fa-fw"></i>
+        <span>Continue with Google</span>
+      </a>
+      <!-- Google button ends here -->
     {% endif %}
   </div>
 {% endblock content %}

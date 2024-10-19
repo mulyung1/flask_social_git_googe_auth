@@ -26,7 +26,7 @@ github_blueprint = make_github_blueprint(
 google_blueprint = make_google_blueprint(
     client_id=os.getenv("GOOGLE_ID"),
     client_secret=os.getenv("GOOGLE_SECRET"),
-    scope=["profile", "email"],
+    scope=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
     storage=SQLAlchemyStorage(
         OAuth,
         db.session,

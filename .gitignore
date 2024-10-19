@@ -2,3 +2,4 @@
 venv/
 instance/users.db
 users.db
+*.pyc
